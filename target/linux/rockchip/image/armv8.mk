@@ -280,3 +280,11 @@ define Device/xunlong_orangepi-r1-plus-lts
   DEVICE_PACKAGES := kmod-usb-net-rtl8152
 endef
 TARGET_DEVICES += xunlong_orangepi-r1-plus-lts
+
+define Device/myir_rk3576
+  DEVICE_VENDOR := MYIR
+  DEVICE_MODEL := LR3576
+  SOC := rk3576
+  DEVICE_PACKAGES := kmod-r8169
+endef
+TARGET_DEVICES += myir_rk3576 
